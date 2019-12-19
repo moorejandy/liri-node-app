@@ -87,4 +87,23 @@ function showMovie() {
 
 }
 
+function doWhatItSays(){
+
+    fs.readFile("./random.txt", "utf8", function(err, data){
+if (err){
+    return console.log(err)
+}
+else{
+var output = data.split(",");
+
+console.log(output);
+
+command = output[0];
+input =  output.slice(1).join(' ');
+
+showSong();
+    }
+  });
+}
+
 commandSwitch();
