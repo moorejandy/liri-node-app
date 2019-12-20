@@ -172,3 +172,16 @@ Song title: Meet Me Half Way
 Artist name: Haste The Day
 Album title: Attack Of The Wolf King (Deluxe Edition)
 Song preview: null
+
+Artist Name: The Lone Bellow
+Venue Name: St Pancras Old Church
+Venue City: London
+Concert date: 01/22/2020
+
+Movie Title: The Terminator
+Year Released: 1984
+Rating: 8.0
+Country where produced: UK, USA
+Language: English, Spanish
+Plot: In 1984, a human soldier is tasked to stop an indestructible cyborg killing machine, both sent from 2029, from executing a young woman, whose unborn son is the key to humanity's future salvation.
+Actors: Arnold Schwarzenegger, Michael Biehn, Linda Hamilton, Paul Winfield
