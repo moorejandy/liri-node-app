@@ -5,7 +5,6 @@ var Spotify = require('node-spotify-api');
 var moment = require("moment");
 var fs = require('fs');
 
-
 var command = process.argv[2];
 function commandSwitch() {
     switch (command) {
@@ -42,11 +41,15 @@ function showSong() {
 
         for (var i = 0; i < songs.length; i++) {
 
-            console.log("Song title: " + songs[i].name);
-            console.log("Artist name: " + songs[i].artists[0].name);
-            console.log("Album title: " + songs[i].album.name);
-            console.log("Song preview: " + songs[i].preview_url);
-            console.log("----------------------------");
+            var songList = "\nSong title: " + songs[i].name +"\nArtist name: " + songs[i].artists[0].name +
+            "\nAlbum title: " + songs[i].album.name + "\nSong preview: " + songs[i].preview_url;
+
+            console.log(songList);
+
+            fs.appendFile("log.txt", "\n" + songList, function (err) {
+                if (err) throw err;
+                console.log('saved');
+            });
         }
     });
 }
@@ -58,11 +61,15 @@ function showConcert() {
 
             var concerts = response.data;
 
-            console.log("----------------")
-            console.log(concerts[0].artist.name);
-            console.log(concerts[0].venue.name);
-            console.log(concerts[0].venue.city);
-            console.log(moment(concerts[0].datetime).format('L'));
+            var venueDetails = "\nArtist Name: " + concerts[0].artist.name + "\nVenue Name: " + concerts[0].venue.name 
+            + "\nVenue City: " + concerts[0].venue.city + "\nConcert date: " + moment(concerts[0].datetime).format('L');
+
+            console.log(venueDetails);
+
+            fs.appendFile("log.txt", "\n" + venueDetails, function (err) {
+                if (err) throw err;
+                console.log('saved');
+            });
         }
         );
 }
@@ -70,17 +77,19 @@ function showConcert() {
 function showMovie() {
     var axios = require("axios");
 
-    // We then run the request with axios module on a URL with a JSON
     axios.get("http://www.omdbapi.com/?t=" + input + "=&plot=short&apikey=trilogy")
         .then(function (response) {
-            // Then we print out the imdbRating
-            console.log("Movie Title: " + response.data.Title);
-            console.log("Year Release: " + response.data.Year);
-            console.log("The movie's rating is: " + response.data.imdbRating);
-            console.log("Country where the movie was produced: " + response.data.Country);
-            console.log("Language: " + response.data.Language);
-            console.log("Plot: " + response.data.Plot);
-            console.log("Actors: " + response.data.Actors);
+            
+            var movieDeets = "\nMovie Title: " + response.data.Title + "\nYear Released: " + response.data.Year
+            + "\nRating: " + response.data.imdbRating + "\nCountry where produced: " + response.data.Country
+            + "\nLanguage: " + response.data.Language + "\nPlot: " + response.data.Plot + "\nActors: " + response.data.Actors;
+
+            console.log(movieDeets);
+
+            fs.appendFile("log.txt", "\n" + movieDeets, function (err) {
+                if (err) throw err;
+                console.log('saved');
+            });
 
         }
         );
@@ -96,10 +105,8 @@ if (err){
 else{
 var output = data.split(",");
 
-console.log(output);
-
 command = output[0];
-input =  output.slice(1).join(' ');
+input =  output[1];
 
 showSong();
     }
