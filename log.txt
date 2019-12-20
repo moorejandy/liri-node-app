@@ -147,3 +147,28 @@ Song title: Ebay (Parody of "I Want It That Way" by the Backstreet Boys)
 Artist name: "Weird Al" Yankovic
 Album title: Poodle Hat
 Song preview: https://p.scdn.co/mp3-preview/e217ea111ab84a777f204252fce4b18d5de3ae80?cid=7fb2ae12c4564297a6aaa4e997c9c97e
+
+Song title: Meet Me Half Way
+Artist name: Kenny Loggins
+Album title: Back To Avalon
+Song preview: https://p.scdn.co/mp3-preview/c28d3342edd71cf2393c2b538f95800472e61c60?cid=7fb2ae12c4564297a6aaa4e997c9c97e
+
+Song title: Meet Me Half Way
+Artist name: Graham BLVD
+Album title: Pop Instrumental Covers
+Song preview: https://p.scdn.co/mp3-preview/db0539118a19f88b4cace5c34e33b3907d6a56f6?cid=7fb2ae12c4564297a6aaa4e997c9c97e
+
+Song title: Meet Me Half Way
+Artist name: Kenny Loggins
+Album title: Yesterday, Today, Tomorrow - The Greatest Hits Of Kenny Loggins
+Song preview: https://p.scdn.co/mp3-preview/141c561aade40bc05c6bff70fb0cb88967b78cc8?cid=7fb2ae12c4564297a6aaa4e997c9c97e
+
+Song title: Meet Me Half Way
+Artist name: Kenny Loggins
+Album title: The Essential Kenny Loggins
+Song preview: https://p.scdn.co/mp3-preview/200e6e1e108f4f98d0ced998e61b53d2f3015e2b?cid=7fb2ae12c4564297a6aaa4e997c9c97e
+
+Song title: Meet Me Half Way
+Artist name: Haste The Day
+Album title: Attack Of The Wolf King (Deluxe Edition)
+Song preview: null
